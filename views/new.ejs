@@ -1,0 +1,25 @@
+<div class="form-container">
+  <form class="form" action="/post/new" method="post">
+    <div class="input-wrapper">
+      <label for="Title">Title:</label> <br>
+      <input type="text" value="<%= post.title %>" name="title" id="title" placeholder="What is your post title?" />
+    </div>
+    <div class="input-wrapper">
+      <label for="author">Author:</label> <br>
+      <input type="text" name="author" value="<%= post.author %>" id="author" placeholder="Who is writing this article?" />
+    </div>
+    <div class="input-wrapper post-wrapper">
+      <label for="post">Post:</label> <br>
+            <textarea
+        type="textarea"
+        name="post"
+        id="post"
+        rows="15"
+        placeholder="Write your post here!"
+      ><%= post.post %></textarea>
+    </div>
+    <div class="input-wrapper">
+      <button class="btn-submit" type="submit">Submit</button>
+    </div>
+  </form>
+</div>

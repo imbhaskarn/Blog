@@ -1,0 +1,19 @@
+<section class="all-posts">
+  <% result.forEach(result =>{ %>
+  <section class="post-container">
+    <div class="post-title"><h2><%= result.title %></h2></div>
+    <span class="post-info">
+      <span class="date-published"
+        >Date Published:<%= result.date.toLocaleString() %>
+      </span>
+      <span class="author">Author:<%= result.author %> </span>
+    </span>
+    <div class="post">
+      <p class="paragraph"><%= result.post %></p>
+      <a href="/post/view/<%=result.id%>" target="_blank" rel="noopener noreferrer" class="readmore"
+        >read more</a
+      >
+    </div>
+  </section>
+  <% }) %>
+</section>

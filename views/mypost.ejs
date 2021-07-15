@@ -1,0 +1,16 @@
+<section class="view-post">
+  <% if(result) { %>
+  <section class="post-container">
+    <div class="post-title"><h2><%= result.title %></h2></div>
+    <span class="about-post">
+      <span class="date-published"><%= result.date.toLocaleString().split(',')[0]%>
+      </span>
+      <span class="author"><%= result.author %> </span>
+      <span><a href="/post/edit/<%=result.id%>" target="_blank">Edit</a></span>
+    </span>
+    <div class="post">
+      <p><%= result.post %></p>
+    </div>
+  </section>
+<% } %> 
+</section>
