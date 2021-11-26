@@ -1,2 +1,1 @@
-let element = document.getElementById('readmore')
-
+let element = document.getElementById("readmore");
